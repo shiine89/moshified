@@ -1,0 +1,106 @@
+:root{
+    --color-primary:#2584ff;
+    --color-secondary:#00d9ff;
+    --color-accent:#ff3400;
+    --color-heading:#1b0760;
+    --color-body:#918ca4;
+    --color-body-darker: #5c5577;
+    --border-color:#ccc;
+    --border-radius: 30px;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+/* typography */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: inter,arial,Arial, Helvetica, sans-serif;
+    line-height: 1.1;
+}
+
+h2{
+    font-size:4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2rem;
+}
+
+@media screen and(min-width:1024px){
+    h2{
+        font-size:4rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    h4{
+        font-size: 2rem;
+    }   
+}
+h2,h3,h4{
+    margin-bottom: 1rem;
+}
+p{
+    margin-top: 0;
+}
+
+/*links  */
+
+a{
+    text-decoration: none;
+}
+.link-arrow{
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: margin:0.15s;
+}
+
+.link-arrow::after{
+    content: "→";
+    margin: 5px;
+}
+.link-arrow:hover::after{
+    margin: 10px; ;
+}
+
+@media screen and(min-width: 1024px){
+    .link-arrow{
+        font-size: 1.5rem;
+    }
+}
+
+/* badges */
+
+.badge{
+border-radius: 20px;
+padding: 0.5rem, 2rem;
+font-weight: 600;
+white-space: nowrap;
+font-size: 2rem;
+}
+.badge--primary{
+    background-color: var(--color-primary);
+    columns: #fff;
+}
+.badge--secondary{
+    background-color: var(--color-secondary);
+    columns: #fff;
+}
+.badge-small{
+    font-size:1.6rem;
+}
+
+@media screen and(min-width :1024px){
+    .badge{
+        font-size: 1.5rem;
+    }
+}
